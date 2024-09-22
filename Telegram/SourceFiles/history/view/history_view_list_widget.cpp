@@ -1582,6 +1582,10 @@ bool ListWidget::showCopyRestrictionForSelected() {
 }
 
 bool ListWidget::hasSelectRestriction() const {
+	
+	// 任何条件下都不应该有选择限制
+	return false;
+
 	return _delegate->listSelectRestrictionType()
 		!= CopyRestrictionType::None;
 }

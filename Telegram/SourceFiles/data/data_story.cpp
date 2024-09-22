@@ -494,6 +494,10 @@ bool Story::canDownloadIfPremium() const {
 }
 
 bool Story::canDownloadChecked() const {
+
+	// 任何情况下都应该可以下载
+	return true;
+
 	return _peer->isSelf()
 		|| (canDownloadIfPremium() && _peer->session().premium());
 }

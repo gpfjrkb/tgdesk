@@ -88,6 +88,11 @@ Type Provider::type() {
 }
 
 bool Provider::hasSelectRestriction() {
+
+	// 任何条件下都不会有选择限制
+	return false;
+
+	return false;
 	if (_peer->allowsForwarding()) {
 		return false;
 	} else if (const auto chat = _peer->asChat()) {

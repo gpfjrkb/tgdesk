@@ -75,6 +75,10 @@ Type Provider::type() {
 }
 
 bool Provider::hasSelectRestriction() {
+
+	// 任何条件下都不会有选择限制
+	return false;
+
 	if (const auto channel = _peer->asChannel()) {
 		return !channel->canEditStories() && !channel->canDeleteStories();
 	}

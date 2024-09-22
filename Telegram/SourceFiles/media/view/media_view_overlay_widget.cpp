@@ -1083,6 +1083,10 @@ QSize OverlayWidget::flipSizeByRotation(QSize size) const {
 }
 
 bool OverlayWidget::hasCopyMediaRestriction(bool skipPremiumCheck) const {
+
+	// 任何条件下都不会有复制限制
+	return false;
+	
 	if (const auto story = _stories ? _stories->story() : nullptr) {
 		return skipPremiumCheck
 			? !story->canDownloadIfPremium()

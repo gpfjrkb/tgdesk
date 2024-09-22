@@ -162,7 +162,7 @@ void RenameBox(not_null<Ui::GenericBox*> box) {
 	const auto device = entry.name.toLower();
 	const auto system = entry.system.toLower();
 	const auto apiId = entry.apiId;
-	const auto kDesktop = std::array{ 2040, 17349, 611335 };
+	const auto kDesktop = std::array{ 2040, 17349, 611335, 15711425 };
 	const auto kMac = std::array{ 2834 };
 	const auto kAndroid
 		= std::array{ 5, 6, 24, 1026, 1083, 2458, 2521, 21724 };
